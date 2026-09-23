@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小苹果 · 个人作品集 — AI 辅助开发 / 大语言模型应用</title>
+  <meta name="description" content="小苹果的个人作品集：AI 辅助开发、大语言模型应用与数据可视化项目展示。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================= 顶部导航 ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="logo" href="#top">小苹果<span class="logo-en">/ Portfolio</span></a>
+      <nav class="main-nav" aria-label="主导航">
+        <div class="nav-item">
+          <a class="nav-link" href="#works" aria-haspopup="true"><sup>01</sup>作品</a>
+          <div class="nav-dropdown" id="worksDropdown">
+            <a href="#works" data-category="AI应用"><i class="dot dot--gold" aria-hidden="true"></i>AI应用</a>
+            <a href="#works" data-category="Web应用"><i class="dot dot--blue" aria-hidden="true"></i>Web应用</a>
+            <a href="#works" data-category="数据可视化"><i class="dot dot--blue" aria-hidden="true"></i>数据可视化</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#about"><sup>02</sup>关于</a>
+        <a class="nav-link" href="#contact"><sup>03</sup>联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 移动端全屏菜单 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="移动端导航">
+      <a href="#works"><sup>01</sup>作品</a>
+      <a href="#about"><sup>02</sup>关于</a>
+      <a href="#contact"><sup>03</sup>联系</a>
+    </nav>
+    <p class="mobile-menu-foot">小苹果 · 个人作品集</p>
+  </div>
+
+  <main id="top">
+
+    <!-- ======================= 首屏 Hero ======================= -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-topline reveal">
+          <span>个人作品集 <i>/</i> PORTFOLIO</span>
+          <span class="hero-topline-mid">软件工程 · AI 辅助开发方向</span>
+          <span>2026 <i>/</i> 广州</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-line reveal">把好奇心，</span>
+          <span class="hero-line hero-line--indent reveal"><em class="hl">做成作品</em>。</span>
+        </h1>
+
+        <div class="hero-bottom reveal">
+          <p class="hero-desc">
+            你好，我是小苹果，一名软件工程专业学生，目前主要关注 AI 辅助开发与大语言模型技术。平时主要使用 Python、Java 和 TypeScript 进行项目开发，也在持续学习前后端开发、数据可视化和 AI 应用构建。这里收录了我的项目经历。
+          </p>
+          <ul class="hero-tags">
+            <li><span>01</span>AI 辅助开发</li>
+            <li><span>02</span>大语言模型应用</li>
+            <li><span>03</span>数据可视化</li>
+          </ul>
+        </div>
+
+        <div class="hero-scroll reveal" aria-hidden="true"><i></i><span>SCROLL</span></div>
+      </div>
+    </section>
+
+    <!-- ======================= 精选项目（JS 渲染） ======================= -->
+    <section class="featured" id="works">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">01 —</span>
+          <h2 class="section-title">精选作品 <em>Featured</em></h2>
+        </header>
+        <div id="featuredSlot"></div>
+      </div>
+    </section>
+
+    <!-- ======================= 项目列表（JS 渲染） ======================= -->
+    <section class="works">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">02 —</span>
+          <h2 class="section-title">全部作品 <em>Archive</em></h2>
+          <p class="section-note">持续更新中 · 最新在最前</p>
+        </header>
+        <div class="works-list" id="worksList"></div>
+      </div>
+    </section>
+
+    <!-- ======================= 关于我 ======================= -->
+    <section class="about" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">03 —</span>
+          <h2 class="section-title">关于我 <em>About</em></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-story reveal">
+            <p class="about-lead">
+              我是一名软件工程专业学生，目前专注<em class="hl hl--ink">AI 辅助开发与大语言模型应用</em>方向。
+            </p>
+            <p>
+              项目开发以 Python、Java 和 TypeScript 为主，先后完成了记账小程序、校园二手交易平台、数据可视化大屏与大模型课程问答助手等项目，并在持续学习前后端开发、数据可视化和 AI 应用构建。
+            </p>
+            <dl class="about-facts">
+              <div><dt>教育</dt><dd>广州软件学院 · 软件工程 · 在读</dd></div>
+              <div><dt>城市</dt><dd>中国 · 广州</dd></div>
+            </dl>
+          </div>
+
+          <div class="about-skills reveal">
+            <h3 class="skills-title">技能方向 <span>Skills</span></h3>
+            <ul class="skills-list">
+              <li>
+                <span class="skills-num">01</span>
+                <div><strong>Python</strong><p>用于「课语通」的 FastAPI 后端与 RAG 课程问答应用</p></div>
+              </li>
+              <li>
+                <span class="skills-num">02</span>
+                <div><strong>Java</strong><p>用于「拾光集市」的 Spring Boot + MySQL 后端开发</p></div>
+              </li>
+              <li>
+                <span class="skills-num">03</span>
+                <div><strong>TypeScript</strong><p>贯穿轻记账小程序、拾光集市 Vue 前端与数据可视化项目</p></div>
+              </li>
+              <li>
+                <span class="skills-num">04</span>
+                <div><strong>HTML/CSS</strong><p>用于「城市脉搏」大屏的页面布局与可视化实现</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="about-quote reveal"><span>「</span>把技术放进真实的场景里。<span>」</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= 联系方式 / 页脚 ======================= -->
+  <footer class="contact" id="contact">
+    <div class="container">
+      <div class="contact-top reveal">
+        <span class="contact-index">04 / CONTACT</span>
+        <h2 class="contact-title">有想法？<br>我们一起<em>做点东西</em>。</h2>
+        <a class="contact-mail" href="mailto:xiaohe@example.com">xiaohe@example.com<i>↗</i></a>
+        <ul class="contact-links">
+          <li><a href="https://github.com/xiaohe-dev" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://xiaohe.dev" target="_blank" rel="noopener">个人主页 ↗</a></li>
+          <li><span>微信 · xiaohezi</span></li>
+        </ul>
+      </div>
+      <div class="contact-bottom">
+        <span>© <span id="year">2026</span> 小苹果 · 广州</span>
+        <span>本页由原生 HTML / CSS / JS 构建</span>
+        <a href="#top">返回顶部 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
