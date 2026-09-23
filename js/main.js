@@ -179,4 +179,31 @@
   /* ------------------------------ 页脚年份 ------------------------------ */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ------------------------------ 深浅色主题切换 ------------------------------ */
+  const rootEl = document.documentElement;
+  const themeBtn = document.getElementById("themeToggle");
+
+  function syncThemeBtn() {
+    const isDark = rootEl.getAttribute("data-theme") === "dark";
+    const label = isDark ? "切换到浅色主题" : "切换到深色主题";
+    themeBtn.setAttribute("aria-label", label);
+    themeBtn.setAttribute("title", label);
+  }
+  syncThemeBtn();
+
+  themeBtn.addEventListener("click", () => {
+    const next = rootEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    rootEl.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    syncThemeBtn();
+  });
+
+  // 多标签页间同步主题选择
+  window.addEventListener("storage", (e) => {
+    if (e.key === "theme" && (e.newValue === "dark" || e.newValue === "light")) {
+      rootEl.setAttribute("data-theme", e.newValue);
+      syncThemeBtn();
+    }
+  });
 })();

@@ -1,0 +1,66 @@
+# ===== 系统文件 =====
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.nfs*
+
+# ===== 编辑器 / IDE =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# AI 编辑器本地配置（保留 rules 中的项目规则）
+.trae/
+!.trae/rules/
+
+# ===== 依赖目录 =====
+node_modules/
+bower_components/
+
+# ===== 构建产物 =====
+dist/
+dist-ssr/
+build/
+.output/
+.vite/
+
+# ===== 日志 =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== 环境变量 / 敏感信息 =====
+.env
+.env.local
+.env.*.local
+
+# ===== 包管理器缓存 =====
+.npm/
+.yarn/cache
+.pnpm-store/
+
+# ===== 其他 =====
+*.local
+coverage/
+.temp/
+.cache/
